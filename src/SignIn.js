@@ -28,10 +28,11 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    // marginTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  
   },
   avatar: {
     margin: theme.spacing(1),
@@ -44,13 +45,25 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  extraStyle: {
+    backgroundColor: '#1C8EF9 !important',
+    paddingTop: '201px',
+    paddingBottom: '238px'
+  },
+
+  containerStyle: {
+    backgroundColor: 'white',
+    borderRadius: '25px'
+
+  } 
 }));
 
 export default function SignIn() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+   <div className={classes.extraStyle}> 
+    <Container component="main" maxWidth="xs"  className={classes.containerStyle} >
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -113,6 +126,6 @@ export default function SignIn() {
         <Copyright />
       </Box>
     </Container>
+    </div>  
   );
 }
-
