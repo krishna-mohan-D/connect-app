@@ -1,6 +1,6 @@
 import React from 'react';
-import SignIn from './SignIn';
-import Navbar from './Navbar';
+import Fsignin from './components/Fsignin';
+import Fnavbar from './components/Fnavbar';
 
 
 
@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       
-      <Navbar />
-      <SignIn />
+      <Fnavbar />
+      <Fsignin />
 
     </>
   );
