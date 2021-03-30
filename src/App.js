@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       
-      <Fnavbar />
+      {/* <Fnavbar /> */}
       <Fsignin />
 
     </>
